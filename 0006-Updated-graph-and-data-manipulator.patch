@@ -1,0 +1,24 @@
+From 4808c0caabee0fa9db57864015cafb2a713a398d Mon Sep 17 00:00:00 2001
+From: Dev Marlecha <dev.marlecha034@nmims.edu.in>
+Date: Mon, 4 Sep 2023 16:13:49 +0530
+Subject: [PATCH 6/7] Updated graph and data manipulator
+
+---
+ src/Graph.tsx | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/src/Graph.tsx b/src/Graph.tsx
+index 277797d..f9d85d2 100644
+--- a/src/Graph.tsx
++++ b/src/Graph.tsx
+@@ -36,7 +36,6 @@ class Graph extends Component<IProps, {}> {
+       // Load the `table` in the `<perspective-viewer>` DOM reference.
+       elem.load(this.table);
+       elem.setAttribute('view', 'y_line');
+-      elem.setAttribute('column-pivots', '["stock"]');
+       elem.setAttribute('row-pivots', '["timestamp"]');
+       elem.setAttribute('columns', '["top_ask_price"]');
+       elem.setAttribute('aggregates', JSON.stringify({
+-- 
+2.42.0.windows.1
+
